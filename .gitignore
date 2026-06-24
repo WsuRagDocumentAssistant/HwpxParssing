@@ -1,7 +1,7 @@
 .venv/
 .vscode/
 
-start.py
+test.py
 
 2주기(2022년) 대학혁신지원사업 1차년도 연차평가보고서(최종)_2307031705.zip
 
@@ -15,3 +15,5 @@ build/
 dist/
 
 .vs
+
+

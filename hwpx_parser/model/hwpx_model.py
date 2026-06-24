@@ -1,11 +1,14 @@
 #================================================
-# test.py
+# hwpx_model.py
 #================================================
 
-import hwpx_parser
+from dataclasses import dataclass
+from typing import Optional
+
+from .metadata import Metadata
 
 #────────────────────────────────────────────────
 
-if __name__ == "__main__":
-    hwpx_parser.parser.HwpxParser
-    hwpx_parser.model.HwpxModel
+@dataclass
+class HwpxModel:
+    metadata : Optional[Metadata]

@@ -11,6 +11,7 @@
     <OutputPath>.</OutputPath>
     <Name>HwpxParser</Name>
     <RootNamespace>HwpxParser</RootNamespace>
+    <InterpreterId>MSBuild|.venv|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,15 +22,35 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="hwpx_parser\model\hwpx_model.py" />
+    <Compile Include="hwpx_parser\model\metadata.py" />
+    <Compile Include="hwpx_parser\model\__init__.py" />
+    <Compile Include="hwpx_parser\parser\hwpx_parser.py" />
+    <Compile Include="hwpx_parser\parser\metadata_parser.py" />
+    <Compile Include="hwpx_parser\parser\__init__.py" />
+    <Compile Include="hwpx_parser\__init__.py" />
     <Compile Include="test.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="hwpx_parser\" />
+    <Folder Include="hwpx_parser\model\" />
+    <Folder Include="hwpx_parser\parser\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="pyproject.toml" />
     <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include=".venv\">
+      <Id>.venv</Id>
+      <Version>3.11</Version>
+      <Description>.venv (Python 3.11 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
