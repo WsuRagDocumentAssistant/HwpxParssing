@@ -33,8 +33,8 @@ class HwpxParser:
         self.__unpack_hwpx()
 
 
-    def __call__(self):
-        self.parse()
+    def __call__(self) -> Optional[HwpxModel]:
+        return self.parse()
 
 
     def parse(self) -> Optional[HwpxModel]:
@@ -43,7 +43,7 @@ class HwpxParser:
         self.hwpx.styles   = header_parse.parse(self)
         return self.hwpx
 
-
+    
     def __unpack_hwpx(self) -> None:
         if self._UNPACKED_DIR_PATH.exists(): return
         self._UNPACKED_DIR_PATH.mkdir(parents=True, exist_ok=True)
