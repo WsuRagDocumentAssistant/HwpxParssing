@@ -22,11 +22,17 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="hwpx_parser\model\base.py" />
     <Compile Include="hwpx_parser\model\hwpx_model.py" />
-    <Compile Include="hwpx_parser\model\metadata.py" />
+    <Compile Include="hwpx_parser\model\models\contents\image.py" />
+    <Compile Include="hwpx_parser\model\models\manifest.py" />
+    <Compile Include="hwpx_parser\model\models\style.py" />
+    <Compile Include="hwpx_parser\model\models\metadata.py" />
     <Compile Include="hwpx_parser\model\__init__.py" />
     <Compile Include="hwpx_parser\parser\hwpx_parser.py" />
-    <Compile Include="hwpx_parser\parser\metadata_parser.py" />
+    <Compile Include="hwpx_parser\parser\parsers\header_parse.py" />
+    <Compile Include="hwpx_parser\parser\parsers\manifest_parse.py" />
+    <Compile Include="hwpx_parser\parser\parsers\metadata_parse.py" />
     <Compile Include="hwpx_parser\parser\__init__.py" />
     <Compile Include="hwpx_parser\__init__.py" />
     <Compile Include="test.py" />
@@ -34,10 +40,18 @@
   <ItemGroup>
     <Folder Include="hwpx_parser\" />
     <Folder Include="hwpx_parser\model\" />
+    <Folder Include="hwpx_parser\model\models\" />
+    <Folder Include="hwpx_parser\model\models\contents\" />
     <Folder Include="hwpx_parser\parser\" />
+    <Folder Include="hwpx_parser\parser\parsers\" />
+    <Folder Include="doc\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="doc\2주기%282023년%29 2022 ~ 2024 대학혁신지원사업 성과평가보고서.hwpx">
+      <Publish>False</Publish>
+    </Content>
+    <Content Include="HwpxParser.slnx" />
     <Content Include="pyproject.toml" />
     <Content Include="README.md" />
   </ItemGroup>
