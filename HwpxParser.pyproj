@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8bd0d0ef-836e-4cc9-a560-27531aecc16c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>test.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -35,7 +36,6 @@
     <Compile Include="hwpx_parser\parser\parsers\metadata_parse.py" />
     <Compile Include="hwpx_parser\parser\__init__.py" />
     <Compile Include="hwpx_parser\__init__.py" />
-    <Compile Include="test.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="hwpx_parser\" />
