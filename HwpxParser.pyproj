@@ -25,10 +25,10 @@
   <ItemGroup>
     <Compile Include="hwpx_parser\model\base.py" />
     <Compile Include="hwpx_parser\model\hwpx_model.py" />
-    <Compile Include="hwpx_parser\model\models\contents\image.py" />
-    <Compile Include="hwpx_parser\model\models\manifest.py" />
-    <Compile Include="hwpx_parser\model\models\style.py" />
-    <Compile Include="hwpx_parser\model\models\metadata.py" />
+    <Compile Include="hwpx_parser\model\models\image.py" />
+    <Compile Include="hwpx_parser\model\models\elements\manifest.py" />
+    <Compile Include="hwpx_parser\model\models\elements\style.py" />
+    <Compile Include="hwpx_parser\model\models\elements\metadata.py" />
     <Compile Include="hwpx_parser\model\__init__.py" />
     <Compile Include="hwpx_parser\parser\hwpx_parser.py" />
     <Compile Include="hwpx_parser\parser\parsers\header_parse.py" />
@@ -42,7 +42,7 @@
     <Folder Include="hwpx_parser\" />
     <Folder Include="hwpx_parser\model\" />
     <Folder Include="hwpx_parser\model\models\" />
-    <Folder Include="hwpx_parser\model\models\contents\" />
+    <Folder Include="hwpx_parser\model\models\elements\" />
     <Folder Include="hwpx_parser\parser\" />
     <Folder Include="hwpx_parser\parser\parsers\" />
     <Folder Include="doc\" />

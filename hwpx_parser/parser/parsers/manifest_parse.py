@@ -7,7 +7,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING, Optional
 from xml.etree import ElementTree as ET
 
-from hwpx_parser.model.models.manifest import Manifest, ManifestItem
+from hwpx_parser.model.models.elements.manifest import Manifest, ManifestItem
 
 if TYPE_CHECKING:
     from hwpx_parser.parser.hwpx_parser import HwpxParser

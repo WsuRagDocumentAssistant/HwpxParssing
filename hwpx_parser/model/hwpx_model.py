@@ -6,9 +6,9 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Optional
 
-from .models.metadata import Metadata
-from .models.manifest import Manifest
-from .models.style import Style
+from .models.elements.metadata import Metadata
+from .models.elements.manifest import Manifest
+from .models.elements.style import Style
 
 #────────────────────────────────────────────────
 
